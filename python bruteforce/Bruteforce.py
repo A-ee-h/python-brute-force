@@ -66,7 +66,6 @@ def main():
             thread.start()
 
 if __name__ == "__main__":
-    banner = "         Checking the Server !!!        \n\
-     [+]█████████████████████████████████████████████████[+]"
+    banner = "         Checking the Server !!!        [+]█████████████████████████████████████████████████[+]"
     print(banner)
     main()
