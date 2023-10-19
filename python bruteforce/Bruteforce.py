@@ -56,7 +56,7 @@ def main():
 
     cracker = Bruteforce(url, username, err_msg)
 
-    with open("password.txt", "r") as f:
+    with open("passwords.txt", "r") as f:
         chunk_size = 1000
         while True:
             pw = f.readline(chunk_size)
