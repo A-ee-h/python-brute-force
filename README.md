@@ -1,2 +1,0 @@
-# python-brute-force
-
